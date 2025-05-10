@@ -7,14 +7,21 @@
     <generator>Hugo</generator>
     <language>en-us</language>
     <copyright>Ryner Tan</copyright>
-    <lastBuildDate>Tue, 01 Oct 2024 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 May 2025 17:51:42 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 10 May 2025 17:51:42 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;Github: &lt;a href=&#34;https://github.com/monkeyWzr&#34;&gt;monkeyWzr&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>ML Site Reliability Engineer Intern, Tencent</title>
       <link>http://localhost:1313/posts/tc_sre/</link>
       <pubDate>Tue, 01 Oct 2024 09:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/tc_sre/</guid>
-      <description>&lt;p&gt;Working at Tencent was really enriching &amp;amp; I chanced upon this listing for an ML SRE so I applied &amp;amp; went through the interview pipeline once again!&lt;/p&gt;&#xA;&lt;p&gt;Decided to do this part-time during Term 7 (SUTD goes by trimesters!) too because I&amp;rsquo;ve been learning infinitely more in industry roles than in school so why not right.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../images/mlsre_jd.jpg&#34; alt=&#34;JD&#34; title=&#34;JD when I applied&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There I began what I called Project Dora II for lack of a better name (and some semblance of continuity from wanting to contribute more previously). This one was a lot more tooling than observability.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Working at Tencent was really enriching &amp;amp; I chanced upon this listing for an ML SRE so I applied &amp;amp; went through the interview pipeline once again!&lt;/p&gt;&#xA;&lt;p&gt;Decided to do this part-time during Term 7 (SUTD goes by trimesters!) too because I&amp;rsquo;ve been learning infinitely more in industry roles than in school so why not right.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/mlsre_jd.jpg&#34; alt=&#34;JD&#34; title=&#34;JD when I applied&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There I began what I called Project Dora II for lack of a better name (and some semblance of continuity from wanting to contribute more previously). This one was a lot more tooling than observability.&lt;/p&gt;</description>
     </item>
     <item>
       <title>ML/LLMOps Engineer Intern, Tencent</title>

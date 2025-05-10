@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "styles.css",
-	"sourceRoot": "C:/Users/Ryner/Code/hugo-portfolio",
+	"sourceRoot": "C:/Users/Ryner/Code/rynertan.github.io",
 	"sources": [
 		"themes/cactus/assets/scss/style.scss",
 		"themes/cactus/assets/scss/_variables.scss",

@@ -17,7 +17,7 @@ Engineers often have to account for crashes & anomalies in game servers to the m
 
 I wrote pipelines to reduce toil for my manager in reviewing business reports. Downstream tasks include translation since we had colleagues who speak different languages from different parts of the world, and also summarisation to make reports succinct and easy to read.
 
-![one of the pipelines I planned](../images/llmops_pipeline.png "one of the pipelines I planned")
+![pipeline](/images/llmops_pipeline.png "one of the pipelines I planned")
 
 This reduced time taken for reviews by approximately ~40%, which meant more time for managers to focus on other priorities.
 

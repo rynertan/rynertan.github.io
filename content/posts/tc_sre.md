@@ -13,7 +13,7 @@ Working at Tencent was really enriching & I chanced upon this listing for an ML 
 
 Decided to do this part-time during Term 7 (SUTD goes by trimesters!) too because I've been learning infinitely more in industry roles than in school so why not right.
 
-![JD](../images/mlsre_jd.jpg "JD when I applied")
+![JD](/images/mlsre_jd.jpg "JD when I applied")
 
 There I began what I called Project Dora II for lack of a better name (and some semblance of continuity from wanting to contribute more previously). This one was a lot more tooling than observability.
 
