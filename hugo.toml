@@ -46,10 +46,6 @@ weight = 3
     style = "dracula"
     tabWidth = 4
 
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
-    
 [params]
 
   colortheme = "light" # dark, light, white, or classic
