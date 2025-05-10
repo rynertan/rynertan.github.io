@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Ryner Tan</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Ryner Tan</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Ryner Tan</copyright>
+    <lastBuildDate>Tue, 29 Nov 2016 21:08:52 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>netfilter/iptables 笔记</title>
+      <link>http://localhost:1313/posts/2016-11-29-iptables-usage/</link>
+      <pubDate>Tue, 29 Nov 2016 21:08:52 +0000</pubDate>
+      <guid>http://localhost:1313/posts/2016-11-29-iptables-usage/</guid>
+      <description>&lt;h2 id=&#34;netfilter-与-iptables&#34;&gt;netfilter 与 iptables&lt;/h2&gt;&#xA;&lt;p&gt;&lt;code&gt;netfilter&lt;/code&gt;是linux默认的防火墙，在2.4之后的版本正式进入内核。&lt;code&gt;netfilter&lt;/code&gt; 使用四个表(Table)来存放控制信息包过滤处理的规则集。每张表由链(Chain)组成，每条链又包含了多条规则(rule)。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;iptables&lt;/code&gt;是用来编辑操作这些表的一个工具。&lt;code&gt;iptables&lt;/code&gt;包中也包含了针对IPv6的工具&lt;code&gt;ip6tables&lt;/code&gt;。&lt;/p&gt;&#xA;&lt;p&gt;四个表及其包含的链：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;filter&#xA;&lt;ul&gt;&#xA;&lt;li&gt;INPUT&lt;/li&gt;&#xA;&lt;li&gt;FORWARD&lt;/li&gt;&#xA;&lt;li&gt;OUTPUT&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;nat&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PREROUTING&lt;/li&gt;&#xA;&lt;li&gt;POSTROUTING&lt;/li&gt;&#xA;&lt;li&gt;OUTPUT&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;mangle&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PREROUTING&lt;/li&gt;&#xA;&lt;li&gt;INPUT&lt;/li&gt;&#xA;&lt;li&gt;FORWARD&lt;/li&gt;&#xA;&lt;li&gt;OUTPUT&lt;/li&gt;&#xA;&lt;li&gt;POSTROUTING&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;raw&#xA;&lt;ul&gt;&#xA;&lt;li&gt;PREROUTING&lt;/li&gt;&#xA;&lt;li&gt;OUTPUT&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/2016-11-29-iptables-usage_1.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;filter机制&#34;&gt;filter机制&lt;/h3&gt;&#xA;&lt;p&gt;&lt;code&gt;filter&lt;/code&gt;是&lt;code&gt;netfilter&lt;/code&gt;中最重要的机制，其任务是执行数据包的过滤操作。具有三种内建链：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;INPUT - 来自外部的数据包（访问本机）&lt;/li&gt;&#xA;&lt;li&gt;OUTPUT - 发往外部的数据包（本机访问外部）&lt;/li&gt;&#xA;&lt;li&gt;FORWORD - “路过”本机的数据包，转发到其他设备&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;链中规则的匹配方式遵循&lt;code&gt;first match&lt;/code&gt;。&lt;code&gt;filter&lt;/code&gt;会根据数据包特征从相应链中的第一条规则开始逐一进行匹配。只要遇到满足特征的规则后便不再继续。&#xA;每条链在最底端都定义了默认规则。默认规则只会有一种状态：&lt;code&gt;ACCEPT&lt;/code&gt;或者&lt;code&gt;DROP&lt;/code&gt;。默认为&lt;code&gt;ACCEPT&lt;/code&gt;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;iptables命令参数&#34;&gt;iptables命令参数&lt;/h2&gt;&#xA;&lt;p&gt;格式：&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;iptables -操作方式 [链名] [条件匹配] [选项]&#xD;&#xA;&#xD;&#xA;iptables -[ACD] chain rule-specification [options]&#xD;&#xA;iptables -I chain [rulenum] rule-specification [options]&#xD;&#xA;iptables -R chain rulenum rule-specification [options]&#xD;&#xA;iptables -D chain rulenum [options]&#xD;&#xA;iptables -[LS] [chain [rulenum]] [options]&#xD;&#xA;iptables -[FZ] [chain] [options]&#xD;&#xA;iptables -[NX] chain&#xD;&#xA;iptables -E old-chain-name new-chain-name&#xD;&#xA;iptables -P chain target [options]&#xD;&#xA;iptables -h (print this help information)&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;常用操作方式：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

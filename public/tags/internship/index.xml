@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Internship on Ryner Tan</title>
+    <link>http://localhost:1313/tags/internship/</link>
+    <description>Recent content in Internship on Ryner Tan</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <copyright>Ryner Tan</copyright>
+    <lastBuildDate>Tue, 01 Oct 2024 09:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/internship/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ML Site Reliability Engineer Intern, Tencent</title>
+      <link>http://localhost:1313/posts/tc_sre/</link>
+      <pubDate>Tue, 01 Oct 2024 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tc_sre/</guid>
+      <description>&lt;p&gt;Working at Tencent was really enriching &amp;amp; I chanced upon this listing for an ML SRE so I applied &amp;amp; went through the interview pipeline once again!&lt;/p&gt;&#xA;&lt;p&gt;Decided to do this part-time during Term 7 (SUTD goes by trimesters!) too because I&amp;rsquo;ve been learning infinitely more in industry roles than in school so why not right.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../images/mlsre_jd.jpg&#34; alt=&#34;JD&#34; title=&#34;JD when I applied&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;There I began what I called Project Dora II for lack of a better name (and some semblance of continuity from wanting to contribute more previously). This one was a lot more tooling than observability.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ML/LLMOps Engineer Intern, Tencent</title>
+      <link>http://localhost:1313/posts/tc_llmops/</link>
+      <pubDate>Sat, 01 Jun 2024 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/tc_llmops/</guid>
+      <description>&lt;p&gt;I was planning my life out &amp;amp; chanced upon a DevOps role at Tencent. My previous internship at Home Affairs left me wanting to learn more about the cloud &amp;amp; CI/CD too, so I applied!&lt;/p&gt;&#xA;&lt;p&gt;After 3 rounds of interviews I was fortunate enough to join &lt;a href=&#34;https://ieg.tencent.com/&#34;&gt;Tencent’s Interactive Entertainment Group (IEG)&lt;/a&gt;. My day-to-day would have been to support operations of well-known games like &lt;a href=&#34;https://www.pubgmlite.com/en-US/&#34;&gt;PUBG Mobile&lt;/a&gt;, &lt;a href=&#34;https://unite.pokemon.com/en-us/&#34;&gt;Pokémon Unite&lt;/a&gt; and &lt;a href=&#34;https://www.honorofkings.com/global-en/&#34;&gt;Honor of Kings&lt;/a&gt; but we figured I would be a better fit as ML/LLMOps due to my prior ML experience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>DevOps Engineer Intern, Ministry of Home Affairs</title>
+      <link>http://localhost:1313/posts/home_affairs/</link>
+      <pubDate>Tue, 01 Aug 2023 09:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/home_affairs/</guid>
+      <description>&lt;p&gt;procrastinating, will fill this up!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
