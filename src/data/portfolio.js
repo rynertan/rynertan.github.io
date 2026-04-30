@@ -1,7 +1,7 @@
 export const portfolioData = {
   name: "Ryner Tan",
   title: "PhD Student",
-  bio: "I am a first year PhD student at iNLP Lab in [Singapore University of Technology and Design](https://www.sutd.edu.sg), advised by Prof. [Wenxuan Zhang](https://isakzhang.github.io/). My research interests lie in multimodal reasoning and safety.\n Before my PhD, I did two Machine Learning internships at [Tencent](https://www.tencent.com/en-us/) before completing my undergrad at SUTD with a specialisation in Artificial Intelligence in 2025. ",
+  bio: "I am a first year PhD student at [iNLP Lab](https://isakzhang.github.io/group.html) in [Singapore University of Technology and Design](https://www.sutd.edu.sg), advised by Prof. [Wenxuan Zhang](https://isakzhang.github.io/). My research interests lie in multimodal reasoning and safety.\n Before my PhD, I did two Machine Learning internships at [Tencent](https://www.tencent.com/en-us/) before completing my undergrad at SUTD with a specialisation in Artificial Intelligence in 2025. ",
   links: [
     { name: "Email", url: "mailto:ryner_tan@mymail.sutd.edu.sg" },
     { name: "Google Scholar", url: "https://scholar.google.com/citations?user=7PVRnVEAAAAJ&hl=en" },
