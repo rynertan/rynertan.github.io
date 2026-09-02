@@ -17,8 +17,8 @@ const Home = () => {
       />
       <main>
         <Bio text={portfolioData.bio} />
-        {portfolioData.news && portfolioData.news.length > 0 && (
-          <News items={portfolioData.news} />
+        {portfolioData.updates && portfolioData.updates.length > 0 && (
+          <News items={portfolioData.updates} />
         )}
         {portfolioData.services && portfolioData.services.length > 0 && (
           <Service items={portfolioData.services} />

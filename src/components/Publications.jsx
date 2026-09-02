@@ -32,6 +32,28 @@ const PublicationItem = ({ pub }) => {
     });
   };
 
+  const renderVenue = (pub) => {
+    if (!pub.venue) return null;
+    const venues = Array.isArray(pub.venue)
+      ? pub.venue
+      : typeof pub.venue === 'string'
+      ? pub.venue.split('\n')
+      : [pub.venue];
+
+    return (
+      <div style={{ margin: '0 0 0.75rem 0', color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic', lineHeight: '1.4' }}>
+        {venues.map((v, i) => {
+          const hasYear = pub.year && v.includes(pub.year);
+          return (
+            <div key={i}>
+              {v}{!hasYear && pub.year && i === venues.length - 1 ? ` (${pub.year})` : ''}
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
   return (
     <div style={{ marginBottom: '2.5rem', display: 'flex', gap: '1.5rem', alignItems: 'flex-start' }}>
       {pub.image && (
@@ -61,9 +83,7 @@ const PublicationItem = ({ pub }) => {
         <p style={{ margin: '0 0 0.25rem 0', color: 'var(--text-secondary)', fontSize: '0.95rem' }}>
           {formatAuthors(pub.authors)}
         </p>
-        <p style={{ margin: '0 0 0.75rem 0', color: 'var(--text-muted)', fontSize: '0.9rem', fontStyle: 'italic' }}>
-          {pub.venue} {pub.year && `(${pub.year})`}
-        </p>
+        {renderVenue(pub)}
       
         <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
           {pub.url_pdf && pub.url_pdf !== '#' && (
