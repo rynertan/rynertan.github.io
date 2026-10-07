@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bio = ({ text }) => {
+const Bio = ({ text, image = '/dp.jpg' }) => {
   const parseMarkdownLinks = (text) => {
     const parts = text.split(/(\[.*?\]\(.*?\))/g);
     return parts.map((part, i) => {
@@ -39,18 +39,26 @@ const Bio = ({ text }) => {
     <section className="animate-fade-in stagger-2" style={{ marginBottom: '3rem' }}>
       <h3 className="section-title">Bio</h3>
       <div style={{ maxWidth: '100%' }}>
+        {image && (
+          <img 
+            src={image} 
+            alt="Ryner Tan" 
+            className="bio-photo" 
+          />
+        )}
         {text.split('\n').map((paragraph, idx) => 
           paragraph.trim() ? (
             <p key={idx} style={{ 
-              fontSize: '1.05rem', 
-              lineHeight: '1.75', 
-              color: 'var(--text-secondary)',
+              fontSize: '1.0625rem', 
+              lineHeight: '1.55', 
+              color: 'var(--text-primary)',
               marginBottom: '1.25rem'
             }}>
               {parseMarkdownLinks(paragraph)}
             </p>
           ) : null
         )}
+        <div style={{ clear: 'both' }} />
       </div>
     </section>
   );

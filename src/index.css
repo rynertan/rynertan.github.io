@@ -1,35 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap');
 
 :root {
-  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-charter: 'Charter', 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   --font-lora: 'Lora', serif;
   --font-space: 'Space Grotesk', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
+  --font-optima: Optima, 'Candara', 'URW Classico', sans-serif;
 
-  --font-primary: var(--font-lora);
+  --font-primary: var(--font-charter);
 
   --bg: #ffffff;
-  --text-primary: #171717;
-  --text-secondary: #525252;
-  --text-muted: #a3a3a3;
+  --text-primary: #1a1a1a;
+  --text-secondary: #2d2d2d;
+  --text-muted: #737373;
   --border: #e5e5e5;
   --card-bg: #f9fafb;
-  --primary: #171717;
+  --primary: #1a1a1a;
   --hover-bg: #f3f4f6;
-  --selection: rgba(0, 0, 0, 0.1);
+  --selection: rgba(59, 107, 156, 0.15);
 }
 
-[data-theme='dark'] {
-  --bg: #0a0a0a;
-  --text-primary: #ededed;
-  --text-secondary: #a3a3a3;
-  --text-muted: #525252;
-  --border: #262626;
-  --card-bg: #171717;
-  --primary: #ededed;
-  --hover-bg: #1f2937;
-  --selection: rgba(255, 255, 255, 0.1);
-}
 
 * {
   box-sizing: border-box;
@@ -41,10 +32,9 @@ body {
   font-family: var(--font-primary);
   background-color: var(--bg);
   color: var(--text-primary);
-  line-height: 1.6;
+  font-size: 17px;
+  line-height: 1.55;
   transition: background-color 0.3s ease, color 0.3s ease;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -64,7 +54,7 @@ a:hover {
 .container {
   max-width: 768px;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 2rem 2rem 4rem 2rem;
 }
 
 /* Animations that make it feel premium */
@@ -133,6 +123,33 @@ a:hover {
   color: var(--text-primary);
   text-decoration: none;
   border-color: var(--text-muted);
+}
+
+.bio-photo {
+  float: right;
+  width: 175px;
+  height: 175px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  margin: 0 0 1.25rem 1.75rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  filter: grayscale(1) brightness(1.1);
+  transition: filter 0.3s ease;
+}
+
+.bio-photo:hover {
+  filter: grayscale(0);
+}
+
+@media (max-width: 540px) {
+  .bio-photo {
+    float: none;
+    display: block;
+    margin: 0 0 1.25rem 0;
+    width: 120px;
+    height: 120px;
+  }
 }
 
 button {

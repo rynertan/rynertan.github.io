@@ -51,7 +51,7 @@ const ScrambledEmail = ({ email }) => {
         userSelect: 'text',
         display: 'inline-flex',
         flexWrap: 'wrap',
-        marginBottom: '1.5rem',
+        marginBottom: '0.4rem',
         transition: 'color 0.3s ease',
       }}
       title={status === 'scrambled' ? "Click to reveal email" : ""}

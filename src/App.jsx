@@ -1,5 +1,4 @@
 import React from 'react';
-import ThemeToggle from './components/ThemeToggle';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import { portfolioData } from './data/portfolio';
@@ -7,8 +6,6 @@ import { portfolioData } from './data/portfolio';
 function App() {
   return (
     <div className="container" style={{ position: 'relative' }}>
-      <ThemeToggle />
-
       <Navigation />
 
       <Home />

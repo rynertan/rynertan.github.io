@@ -44,19 +44,24 @@ const News = ({ items }) => {
             key={idx} 
             style={{ 
               display: 'flex', 
-              gap: '1.5rem', 
-              marginBottom: '1rem',
-              fontSize: '0.95rem'
+              gap: '1.25rem', 
+              marginBottom: '0.65rem',
+              fontSize: '0.92rem',
+              lineHeight: '1.48',
+              alignItems: 'baseline'
             }}
           >
             <span style={{ 
+              fontFamily: 'var(--font-mono)',
+              fontSize: '0.8rem',
               color: 'var(--text-muted)', 
-              fontWeight: 500,
-              minWidth: '80px'
+              minWidth: '80px',
+              flexShrink: 0,
+              letterSpacing: '0.01em'
             }}>
               {item.date}
             </span>
-            <span style={{ color: 'var(--text-secondary)' }}>
+            <span style={{ color: 'var(--text-primary)' }}>
               {parseMarkdownLinks(item.text)}
             </span>
           </li>
